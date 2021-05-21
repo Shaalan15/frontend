@@ -1,0 +1,17 @@
+.containsAll{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media(max-width: 767px)
+{
+    .containsAll
+    {
+        flex-direction: column;
+    }
+}
+
+
+

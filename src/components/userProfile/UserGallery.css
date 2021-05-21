@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap');
+
+.gallery {
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+
+    -webkit-column-width: 33%;
+    -moz-column-width: 33%;
+    column-width: 33%;
+
+    justify-content: center;
+    align-items: center;
+    margin: 6% 20%;
+
+    font-family: "Raleway", sans-serif;
+    padding: 0 12px;
+}
+
+.pics {
+    position: relative;
+    cursor: pointer;
+    margin-bottom: 12px;
+    overflow: hidden;
+}
+
+.pics img {
+    opacity: 0.8;
+    position: relative;
+    vertical-align: top;
+    transition: 0.6s;
+    transition-property: opacity;
+}
+
+.pics:hover img{
+    opacity: 1;
+}
+
+.pics .details {
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #fff;
+    width: 100%;
+    height: 100%;
+}
+
+.pics .details h2 {
+    text-align: center;
+    font-size: 2vw;
+    text-transform: uppercase;
+    font-weight: 300;
+    margin-top: 5vw;
+    transition: 0.4s;
+    transition-property: transform;
+}
+
+.pics .details h2 span{
+    font-weight: 900;
+}
+
+.pics:hover .details h2{
+    transform: translateY(-30px);
+}
+
+.pics .details p {
+    margin: 1vw 1vw 0 1vw;
+    font-size: 1.2vw;
+    font-weight: 600;
+    text-align: center;
+    opacity: 0;
+    transition: 0.6s;
+    transition-property: opacity, transform;
+}
+
+.pics:hover .details p{
+    opacity: 1;
+    transform: translateY(-40px);
+}
+
+.moreDetails{
+    position: absolute;
+    background: rgba(255, 255, 255, 0.8);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1vh;
+    bottom: -50vh;
+    transition: 0.6s;
+    transition-property: bottom;
+}
+
+.pics:hover .moreDetails{
+    bottom: 0;
+}
+
+.linkUserSpan {
+    font-weight: 900;
+}
+
+@media (max-width: 1110px){
+    .gallery {
+        -webkit-column-count: 2;
+        -moz-column-count: 2;
+        column-count: 2;
+    }
+}
+
+@media (max-width: 720px){
+    .gallery {
+        -webkit-column-count: 1;
+        -moz-column-count: 1;
+        column-count: 1;
+            
+        -webkit-column-width: 100%;
+        -moz-column-width: 100%;
+        column-width: 100%;
+    }
+}
+
+.model{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
+    transition: opacity 0.4s ease, visibility 0.4s ease, transform 0.5s ease-in-out;
+    visibility: hidden;
+    opacity: 0;
+    transform: scale(0);
+    overflow: hidden;
+    z-index: 999;
+}
+
+.model.open{
+    visibility: visible;
+    opacity: 1;
+    transform: scale(1);
+}
+
+.model img {
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    max-height: 100%;
+    display: block;
+    line-height: 0;
+    box-sizing: border-box;
+    padding: 20px 0 20px;
+    margin: 0 auto;
+}
+.model.open svg{
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    width: 2rem;
+    height: 2rem;
+    padding: 5px;
+    background-color: rgb(0, 0, 0, 0.4);
+    color: #ffffff;
+    cursor: pointer;
+}

@@ -1,0 +1,55 @@
+div.product-1{
+    background-image: url(./Assets/prod1.jpg);
+    background-color: indianred;
+  height: 300px;
+  width:300px;
+  background-size: cover;
+  background-position: center;
+  transition-duration: 0.5s;
+  }div.product-1:hover{
+    transform: scale(0.9);
+  }
+  div.product-2{
+    background-image: url(./Assets/prod2.jpg);
+    background-color: indianred;
+  height: 300px;
+  width:300px;
+  background-size: cover;
+  background-position: center;
+  transition-duration: 0.5s;
+  }div.product-2:hover{
+    transform: scale(0.9);
+  }div.product-3{
+    background-image: url(./Assets/prod3.png);
+    background-color: indianred;
+  height: 300px;
+  width:300px;
+  background-size: cover;
+  background-position: center;
+  transition-duration: 0.5s;
+  }div.product-3:hover{
+    transform: scale(0.9);
+  }div.product-4{
+    background-image: url(./Assets/prod4.jpg);
+    background-color: indianred;
+  height: 300px;
+  width:300px;
+  background-size: cover;
+  background-position: center;
+  transition-duration: 0.5s;
+  }div.product-4:hover{
+    transform: scale(0.9);
+  }div.product-5{
+      background-image: url(./Assets/prod5.jpg);
+    background-color: indianred;
+  height: 300px;
+  width:300px;
+  background-size: cover;
+  background-position: center;
+  transition-duration: 0.5s;
+  }div.product-5:hover{
+    transform: scale(0.9);
+  }
+  div.art-gallery{
+    padding-top: 100px;
+  }

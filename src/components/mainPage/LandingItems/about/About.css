@@ -1,0 +1,28 @@
+.bigBoy{
+    position: relative;
+    width: 100%;
+    padding: 50px 200px;
+}
+
+.allGroups{
+    position: relative;
+    width: 100%;
+}
+
+.allGroups img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 50px 100px;
+}
+
+.headerText{
+    text-align: center;
+    font-weight: bold;
+    font-size: 5vw!important;
+    text-transform: uppercase;
+    letter-spacing: 50px;
+    position: relative;
+    bottom: 100px;
+}

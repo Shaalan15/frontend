@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+.cardPart{
+    position: relative;
+    width: 900px;
+    height: 350px;
+    margin: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background: linear-gradient(124deg, #f89383, #e48383, #e4cc7d, #e4e67f, #7ddf8d, #78dde2, #7e77e9, #e168ec, #e585ee);
+    
+    background-size: 1800% 1800%;
+
+    -webkit-animation: rainbow 18s ease infinite;
+    -z-animation: rainbow 18s ease infinite;
+    -o-animation: rainbow 18s ease infinite;
+    animation: rainbow 18s ease infinite;
+    border-radius: 10px;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 25px 45px rgb(0,0,0,0.1);
+    border: 1px solid rgb(255,255,255,0.5);
+    border-right: 1px solid rgb(255,255,255,0.2);
+    border-bottom: 1px solid rgb(255,255,255,0.2);
+    font-family: 'Poppins', sans-serif;
+    transition: 0.5s;
+}
+
+@-webkit-keyframes rainbow {
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+@-moz-keyframes rainbow {
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+@-o-keyframes rainbow {
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+@keyframes rainbow { 
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+
+.cardPart img{
+    position: absolute;
+    bottom: 0;
+    height: 400px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: 0.5s;
+}
+
+.cardPart:hover img{
+    left: 75%;
+    height: 400px;
+}
+
+.cardPart .textInCard{
+    position: relative;
+    width: 50%;
+    left: 20%;
+    opacity: 0;
+    visibility: hidden;
+    padding: 20px 20px 20px 40px;
+    transition: 0.5s;
+}
+
+.cardPart:hover .textInCard{
+    left: 0;
+    opacity: 1;
+    visibility: visible;
+}
+
+.cardPart .textInCard h2{
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 2.2em;
+    line-height: 1em;
+}
+
+.cardPart .textInCard p{
+    color: #fff;
+}
+
+@media(max-width: 991px)
+{
+    .cardPart{
+        width: auto;
+        max-width: 600px;
+        align-items: flex-start;
+    }
+
+    .cardPart:hover{
+        height: 600px;
+    }
+
+    .cardPart:hover img
+    {
+        left: 50%;
+        height: 350px;
+    }
+
+    .cardPart .textInCard 
+    {
+        width: 100%;
+        left: 0;
+        padding: 40px;
+    }
+}
+
+@media(max-width: 767px)
+{
+    .cardPart{
+        margin: 40px 20px;
+    }
+}
+
+@media(max-width: 420px)
+{
+    .cardPart .textInCard
+    {
+        padding: 30px;
+    }
+    .cardPart:hover img{
+        height: 300px;
+    }
+}
